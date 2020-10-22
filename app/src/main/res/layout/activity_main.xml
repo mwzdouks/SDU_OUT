@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editGrade"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="输入年级"
+        android:inputType="textPersonName"
+        android:textColor="#A3A3A3"
+        app:layout_constraintEnd_toEndOf="@+id/editCollege"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editCollege"
+        app:layout_constraintTop_toBottomOf="@+id/editCollege" />
+
+    <EditText
+        android:id="@+id/editCollege"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="输入学院"
+        android:inputType="textPersonName"
+        android:textColor="#A3A3A3"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="输入姓名"
+        android:inputType="textPersonName"
+        android:textColor="#A3A3A3"
+        app:layout_constraintEnd_toEndOf="@+id/editNum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editNum"
+        app:layout_constraintTop_toBottomOf="@+id/editNum" />
+
+    <EditText
+        android:id="@+id/editNum"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="输入学号"
+        android:inputType="textPersonName"
+        android:textColor="#A3A3A3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="出/入"
+        app:layout_constraintStart_toStartOf="@+id/editGrade"
+        app:layout_constraintTop_toBottomOf="@+id/editGrade" />
+
+    <Button
+        android:id="@+id/buttonPicture"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:onClick="selectPicture"
+        android:text="选择照片"
+        app:layout_constraintBottom_toTopOf="@+id/buttonShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="show"
+        android:text="显示"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="重要声明：本软件仅供校内测试学习使用，不作其他用途。\n请严格遵守学校的防疫规定，不要未经允许外出，对于为其他用途造成的后果本软件将不负任何责任！\n继续使用则认为接受以上声明，否则请退出本软件！\n          By MW"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGrade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
