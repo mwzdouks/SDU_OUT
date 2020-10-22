@@ -45,7 +45,8 @@ Java和Android开发纯萌新,接下来一段时间要忙于复习,期待大佬�
 
 (所幸照片被裁剪为了410*500)
 
-##关于 
+## 关于 
+
 minSDK: 16
 
 图片选择与裁剪使用了(https://github.com/wildma/PictureSelector)
